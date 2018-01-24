@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="krest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/krest_jar</output-path>
+    <root id="archive" name="krest.jar">
+      <element id="module-output" name="krest" />
+    </root>
+  </artifact>
+</component>
