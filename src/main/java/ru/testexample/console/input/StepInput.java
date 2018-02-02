@@ -1,4 +1,4 @@
-package ru.testexample.input;
+package ru.testexample.console.input;
 
 public interface StepInput {
     public int inputStep();

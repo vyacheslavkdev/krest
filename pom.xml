@@ -30,7 +30,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>ru.testexample.game.Game</mainClass>
+                            <mainClass>ru.testexample.cs.client.Client</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

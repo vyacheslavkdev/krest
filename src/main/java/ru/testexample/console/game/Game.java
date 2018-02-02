@@ -1,10 +1,10 @@
-package ru.testexample.game;
+package ru.testexample.console.game;
 
 
-import ru.testexample.input.ConsoleStepInput;
-import ru.testexample.input.StepInput;
-import ru.testexample.view.BoardPrinter;
-import ru.testexample.view.ConsoleBoardPrinter;
+import ru.testexample.console.input.ConsoleStepInput;
+import ru.testexample.console.input.StepInput;
+import ru.testexample.console.view.BoardPrinter;
+import ru.testexample.console.view.ConsoleBoardPrinter;
 
 import java.io.IOException;
 import java.io.InputStreamReader;

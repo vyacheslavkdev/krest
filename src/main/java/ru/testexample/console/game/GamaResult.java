@@ -1,4 +1,4 @@
-package ru.testexample.game;
+package ru.testexample.console.game;
 
 public class GamaResult {
 

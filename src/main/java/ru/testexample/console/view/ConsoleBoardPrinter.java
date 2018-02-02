@@ -1,4 +1,4 @@
-package ru.testexample.view;
+package ru.testexample.console.view;
 
 public class ConsoleBoardPrinter implements BoardPrinter {
 
