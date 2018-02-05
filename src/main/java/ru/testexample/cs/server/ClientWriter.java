@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class ClientWriter {
 
-    ArrayList<Player> players;
+    private ArrayList<Player> players;
 
     public ClientWriter(ArrayList<Player> players) {
         this.players = players;
@@ -26,7 +26,6 @@ public class ClientWriter {
             writer.flush();
         }
     }
-
 
     public void tellPlayer(String message, Player player){
         PrintWriter writer = player.getWriter();
@@ -57,5 +56,4 @@ public class ClientWriter {
         }
         commandPlayer(check, player);
     }
-
 }

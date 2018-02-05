@@ -4,9 +4,8 @@ import java.io.IOException;
 
 public class ClientReader implements Runnable {
 
-    GameController controller;
-    Player player;
-    String field;
+    private GameController controller;
+    private Player player;
 
     public ClientReader(GameController gameController, Player player){
         this.player = player;
@@ -19,7 +18,6 @@ public class ClientReader implements Runnable {
         String[] text;
         try {
             while ((message = player.getReader().readLine()) != null){
-                //System.out.println(player.getPlayerName() + " say: " + message);
                 text = message.split(":");
                 if (text[0].equals("chat")){
                     if (text[1].equals("restart")){
@@ -33,11 +31,6 @@ public class ClientReader implements Runnable {
             }
         } catch (IOException e) {
             controller.removePlayer(player);
-            //e.printStackTrace();
         }
-    }
-
-    public String getStep(){
-        return field;
     }
 }

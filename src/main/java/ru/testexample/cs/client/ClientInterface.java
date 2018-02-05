@@ -53,13 +53,17 @@ public class ClientInterface implements ActionListener {
         chatPannel.setPreferredSize(new Dimension(200,200));
         chatPannel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         textArea = new JTextArea(10,15);
+        textArea.setLineWrap(true);
+        JScrollPane scroller = new JScrollPane(textArea);
+        scroller.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+        scroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         textArea.setEditable(false);
         textField = new JTextField(10);
         buttonSend = new JButton("Send");
         buttonSend.addActionListener(this);
         buttonSend.setMnemonic(KeyEvent.VK_ENTER);
 
-        chatPannel.add(textArea);
+        chatPannel.add(scroller);
         chatPannel.add(textField);
         chatPannel.add(buttonSend);
 

@@ -8,13 +8,13 @@ public class GameController {
 
     private ArrayList<Player> players;
     private int playerCount;
-    private ClientReader clientReader;
     private ClientWriter clientWriter;
     private Game game;
 
     public GameController(){
         players = new ArrayList<Player>();
         clientWriter = new ClientWriter(players);
+        playerCount = 0;
     }
 
     public void startGame(){
@@ -31,7 +31,6 @@ public class GameController {
             System.out.println("player" + playerCount + " added!");
             checkPlayer(player, false);
             ClientReader clientReader = new ClientReader(this, players.get(playerCount-1));
-            player.setClientReader(clientReader);
             Thread t = new Thread(clientReader);
             t.start();
         }
