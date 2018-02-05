@@ -2,7 +2,7 @@ package ru.testexample.cs.server;
 
 public class GamaResult {
 
-    private int[][] win0 =  {
+    private int[][] winCase =  {
             {0,1,2},
             {3,4,5},
             {6,7,8},
@@ -17,14 +17,14 @@ public class GamaResult {
     public  boolean winTest(int[] board) {
 
         for (int i=0; i < 8; i++){
-                if(board[win0[i][0]] == 0
-                 & board[win0[i][1]] == 0
-                 & board[win0[i][2]] == 0){
+                if(board[winCase[i][0]] == 0
+                 & board[winCase[i][1]] == 0
+                 & board[winCase[i][2]] == 0){
                     win = true;
                 } else
-                if(board[win0[i][0]] == 1
-                 & board[win0[i][1]] == 1
-                 & board[win0[i][2]] == 1){
+                if(board[winCase[i][0]] == 1
+                 & board[winCase[i][1]] == 1
+                 & board[winCase[i][2]] == 1){
                     win = true;
                     playerX = false;
                 }
